@@ -1,0 +1,66 @@
+.Form {
+    background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fblockthrough.com%2Fwp-content%2Fuploads%2F2020%2F01%2FAdobeStock_217894165-scaled.jpeg&f=1&nofb=1&ipt=4c78c9b75880a6e35d1f1e3d1e3879188c1271c5a1a188f4e015c652375f435c&ipo=images');
+    height: 100vh;
+    color: white;
+}
+
+.Form form {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+} 
+
+.Form form label {
+    margin-top: 1rem;
+}
+
+.Form .small {
+    font-size: small;
+}
+
+.Form .results {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 300px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.Form .results span:hover {
+    cursor: pointer;
+    background-color: rgb(0,0,0,50%);
+}
+
+.Form .selection {
+    display: flex;
+    flex-direction: row;
+    height: 140px;
+    width: 100vw;
+    flex-wrap: wrap;
+    font-weight: bold;
+    column-gap: 2rem;
+}
+
+.Form .selection img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 999px;
+    overflow: hidden;
+    object-fit: cover;
+    background-origin: border-box;
+    background-clip: content-box;
+    cursor: pointer;
+}
+
+.Form .selection img:hover {
+    border-color: red;
+    border-width: 2px;
+    border-style: dotted;
+}
+
+.Form .error {
+    color: red;
+    font-size: small;
+    font-weight: bold;
+}

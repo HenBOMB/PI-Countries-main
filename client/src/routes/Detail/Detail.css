@@ -1,0 +1,46 @@
+.Detail {
+    background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fblockthrough.com%2Fwp-content%2Fuploads%2F2020%2F01%2FAdobeStock_217894165-scaled.jpeg&f=1&nofb=1&ipt=4c78c9b75880a6e35d1f1e3d1e3879188c1271c5a1a188f4e015c652375f435c&ipo=images');
+    height: 100vh;
+    color: white;
+}
+
+.Detail img {
+    border-radius: 999px;
+    padding: 1rem;
+    width: 20vh;
+    height: 20vh;
+    overflow: hidden;
+    object-fit: cover;
+    background-origin: border-box;
+    background-clip: content-box;
+}
+
+.Detail div {
+    display: flex;
+    flex-direction: column;
+}
+
+.Detail .header {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   gap: 5rem;
+   font-size: xx-large; 
+}
+
+.Detail .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 10rem;
+    font-weight: bold;
+}
+
+.Detail .content div {
+    width: 10vw;
+    font-weight: lighter;
+}
+
+.Detail .content p {
+    margin-left: 2rem;
+}

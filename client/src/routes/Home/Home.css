@@ -1,0 +1,114 @@
+.Home {
+  overflow: hidden;
+}
+
+.Home h1 {
+  margin: 0;
+  margin-left: .8rem;
+  font-size: 1.8rem;
+  position: absolute;
+  z-index: 2;
+  color: white;
+}
+
+.Home .block {
+  z-index: 1;
+  background-color: rgb(0,0,0,60%);
+  height: 5vh;
+  width: 100%;
+  position: absolute;
+  backdrop-filter: blur(2px);
+  bottom: 0;
+}
+
+.Home .slide-wrapper {
+  width: 400vw;
+  animation: slide 20s ease-in-out infinite;
+}
+
+.Home .slide {
+  position: relative;
+  float: left;
+  width: 100vw;
+  height: 100vh;
+}
+
+.Home .slide img {
+  object-fit: cover;
+  width: inherit;
+  height: inherit;
+  user-select: none;
+}
+
+.Home .slide p {
+  color: white;
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  z-index: 2;
+}
+
+@keyframes slide {
+  20% {
+    margin-left: -0vw;
+  }
+
+  25% {
+    margin-left: -100vw;
+  }
+
+  45% {
+    margin-left: -100vw;
+  }
+
+  50% {
+    margin-left: -200vw;
+  }
+
+  70% {
+    margin-left: -200vw;
+  }
+
+  75% {
+    margin-left: -300vw;
+  }
+
+  95% {
+    margin-left: -300vw;
+  }
+
+  100% {
+    margin-left: -0vw;
+  }
+}
+
+.Home input {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  height: 2rem;
+  background-color: transparent;
+  padding: 2px;
+  padding-left: 1rem;
+  border-radius: 5px;
+  border: 0;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.Home input::placeholder {
+  color: white;
+  opacity: .6;
+  font-size: 1rem;
+}
+
+.Home input:hover {
+  outline: none;
+}
+
+.Home input:focus {
+  outline: none;
+}
